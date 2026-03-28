@@ -587,6 +587,40 @@ footer [data-en^="© 2026 Import Export & Services Caribbean S.A."]{
 .hero-brand-legal-meta{
   text-align:left !important;
 }
+
+
+/* Final spacing fix: premium subtitle above Quito, no line */
+.hero-identity-sub{
+  display:block !important;
+  margin-top:8px !important;
+  margin-bottom:18px !important;
+}
+.hero-identity-meta,
+.hero-brand-legal-meta{
+  display:block !important;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+  padding-left:0 !important;
+  margin-left:0 !important;
+  text-align:left !important;
+}
+.hero-identity-meta::before,
+.hero-brand-legal-meta::before,
+.hero-copy .hero-identity-meta::before,
+.hero-copy .hero-brand-legal-meta::before{
+  display:none !important;
+  content:none !important;
+  width:0 !important;
+  height:0 !important;
+  background:transparent !important;
+  border:0 !important;
+}
+@media (max-width:980px){
+  .hero-identity-sub{
+    margin-top:6px !important;
+    margin-bottom:14px !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -618,7 +652,6 @@ footer [data-en^="© 2026 Import Export & Services Caribbean S.A."]{
 <div class="container hero-grid">
 <div class="hero-copy reveal visible">
 <div class="hero-brand">
-
 <div class="hero-brand-text">
 <span class="hero-brand-name" data-en="IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN" data-es="IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN">IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN</span>
 <span class="hero-brand-tag" data-en="Firma consultiva internacional en comercio y estructura empresarial" data-es="Firma consultiva internacional en comercio y estructura empresarial">Firma consultiva internacional en comercio y estructura empresarial</span>
