@@ -564,61 +564,91 @@ footer [data-en^="© 2026 Import Export & Services Caribbean S.A."]{
 }
 
 
-/* Final hero cleanup requested */
-.hero-copy .hero-brand-mark,
-.hero-copy .hero-brand img,
-.hero-copy .hero-identity-clean img{
-  display:none !important;
+/* FINAL HERO IDENTITY BLOCK */
+.hero{
+  padding:136px 0 58px !important;
 }
-.hero-identity-clean{
+.hero-copy{
+  padding-top:26px !important;
+  padding-left:12px !important;
+  max-width:760px !important;
+}
+.hero-identity-final{
+  display:flex !important;
+  flex-direction:column !important;
   align-items:flex-start !important;
+  gap:10px !important;
+  margin:0 0 24px !important;
+  max-width:760px !important;
 }
-.hero-identity-meta{
-  padding-left:0 !important;
-  margin-left:0 !important;
+.hero-identity-legal{
+  font-family:'Cormorant Garamond',serif !important;
+  font-size:clamp(1.08rem,1.55vw,1.38rem) !important;
+  line-height:1.3 !important;
+  letter-spacing:.21em !important;
+  text-transform:uppercase !important;
+  color:var(--ink) !important;
+  max-width:30ch !important;
 }
-.hero-identity-meta::before,
-.hero-brand-legal-meta::before{
-  display:none !important;
+.hero-identity-subtitle{
+  font-size:.82rem !important;
+  line-height:1.55 !important;
+  letter-spacing:.16em !important;
+  text-transform:uppercase !important;
+  color:var(--gold) !important;
+  font-weight:800 !important;
+  max-width:62ch !important;
+  margin-top:2px !important;
+  margin-bottom:4px !important;
+}
+.hero-identity-meta-clean{
+  font-size:.76rem !important;
+  line-height:1.4 !important;
+  letter-spacing:.18em !important;
+  text-transform:uppercase !important;
+  color:#344054 !important;
+  font-weight:700 !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+.hero-identity-meta-clean::before,
+.hero-identity-final::before,
+.hero-identity-final::after{
   content:none !important;
-  width:0 !important;
-}
-.hero-identity-meta,
-.hero-brand-legal-meta{
-  text-align:left !important;
-}
-
-
-/* Final spacing fix: premium subtitle above Quito, no line */
-.hero-identity-sub{
-  display:block !important;
-  margin-top:8px !important;
-  margin-bottom:18px !important;
-}
-.hero-identity-meta,
-.hero-brand-legal-meta{
-  display:block !important;
-  margin-top:0 !important;
-  margin-bottom:0 !important;
-  padding-left:0 !important;
-  margin-left:0 !important;
-  text-align:left !important;
-}
-.hero-identity-meta::before,
-.hero-brand-legal-meta::before,
-.hero-copy .hero-identity-meta::before,
-.hero-copy .hero-brand-legal-meta::before{
   display:none !important;
-  content:none !important;
-  width:0 !important;
-  height:0 !important;
-  background:transparent !important;
-  border:0 !important;
+}
+.hero-brand,
+.hero-eyebrow,
+.hero-brand-minimal,
+.hero-brand-legal{
+  display:none !important;
 }
 @media (max-width:980px){
-  .hero-identity-sub{
-    margin-top:6px !important;
-    margin-bottom:14px !important;
+  .hero{
+    padding:116px 0 42px !important;
+  }
+  .hero-copy{
+    padding-top:8px !important;
+    padding-left:0 !important;
+  }
+  .hero-identity-final{
+    gap:8px !important;
+    margin:0 0 18px !important;
+  }
+  .hero-identity-legal{
+    font-size:.98rem !important;
+    letter-spacing:.14em !important;
+    max-width:28ch !important;
+  }
+  .hero-identity-subtitle{
+    font-size:.72rem !important;
+    letter-spacing:.12em !important;
+    max-width:40ch !important;
+    margin-bottom:2px !important;
+  }
+  .hero-identity-meta-clean{
+    font-size:.66rem !important;
+    letter-spacing:.12em !important;
   }
 }
 </style>
@@ -651,14 +681,9 @@ footer [data-en^="© 2026 Import Export & Services Caribbean S.A."]{
 <header class="hero">
 <div class="container hero-grid">
 <div class="hero-copy reveal visible">
-<div class="hero-brand">
-<div class="hero-brand-text">
-<span class="hero-brand-name" data-en="IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN" data-es="IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN">IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN</span>
-<span class="hero-brand-tag" data-en="Firma consultiva internacional en comercio y estructura empresarial" data-es="Firma consultiva internacional en comercio y estructura empresarial">Firma consultiva internacional en comercio y estructura empresarial</span>
-</div>
-</div>
-<p class="hero-eyebrow" data-en="Quito, Ecuador · Since 2008" data-es="Quito, Ecuador · Desde 2008">Quito, Ecuador · Since 2008</p>
-<h1 class="hero-title" data-en="International trade&lt;br&gt;and &lt;em&gt;executive vision&lt;/em&gt;" data-es="Comercio internacional&lt;br&gt;y &lt;em&gt;visión ejecutiva&lt;/em&gt;">Comercio internacional<br/>y <em>visión ejecutiva</em></h1>
+
+
+<div class="hero-identity-final reveal"><div class="hero-identity-legal" data-en="IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN" data-es="IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN">IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN</div><div class="hero-identity-subtitle" data-en="International advisory firm in trade and business structuring" data-es="Firma consultiva internacional en comercio y estructura empresarial">Firma consultiva internacional en comercio y estructura empresarial</div><div class="hero-identity-meta-clean" data-en="Quito, Ecuador · Since 2008" data-es="Quito, Ecuador · Desde 2008">Quito, Ecuador · Desde 2008</div></div><h1 class="hero-title" data-en="International trade&lt;br&gt;and &lt;em&gt;executive vision&lt;/em&gt;" data-es="Comercio internacional&lt;br&gt;y &lt;em&gt;visión ejecutiva&lt;/em&gt;">Comercio internacional<br/>y <em>visión ejecutiva</em></h1>
 <p class="hero-sub" data-en="We advise companies and investors on international operations, corporate structuring and strategic decisions with institutional judgment and rigorous execution." data-es="Acompañamos a empresas e inversionistas en operaciones internacionales, estructura empresarial y decisiones estratégicas con criterio institucional y ejecución rigurosa.">Acompañamos a empresas e inversionistas en operaciones internacionales, estructura empresarial y decisiones estratégicas con criterio institucional y ejecución rigurosa.</p>
 <div class="hero-actions">
 <a class="btn-primary" data-en="Explore services" data-es="Conocer servicios" href="#servicios">Conocer servicios</a>
@@ -815,14 +840,14 @@ footer [data-en^="© 2026 Import Export & Services Caribbean S.A."]{
 <img alt="Reunión empresarial" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&amp;fit=crop&amp;w=1400&amp;q=80"/>
 <div class="about-overlay">
 <strong data-en="Institutional presence" data-es="Presencia institucional">Presencia institucional</strong>
-<span data-en="IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN, with registered activity, a formal corporate structure and a clear orientation toward orderly growth." data-es="IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN, con actividad registrada, base societaria formal y orientación a crecimiento ordenado.">IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN, con actividad registrada, base societaria formal y orientación a crecimiento ordenado.</span>
+<span data-en="IMPORT EXPORT &amp; CARIBBEAN S.A. — IMPORCARIBEAN, with registered activity, a formal corporate structure and a clear orientation toward orderly growth." data-es="IMPORT EXPORT &amp; CARIBBEAN S.A. — IMPORCARIBEAN, con actividad registrada, base societaria formal y orientación a crecimiento ordenado.">IMPORT EXPORT &amp; CARIBBEAN S.A. — IMPORCARIBEAN, con actividad registrada, base societaria formal y orientación a crecimiento ordenado.</span>
 </div>
 </div>
 <div class="about-info">
 <div class="about-ruc" data-en="Tax ID" data-es="RUC">RUC</div>
 <div class="about-ruc-no">1792142598001</div>
 <div class="about-info-grid">
-<div class="info-item"><strong data-en="Corporate name" data-es="Razón social">Razón social</strong><span data-en="IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN" data-es="IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN">IMPORT EXPORT &amp; SERVICES CARIBBEAN S.A. IMPORCARIBEAN</span></div>
+<div class="info-item"><strong data-en="Corporate name" data-es="Razón social">Razón social</strong><span data-en="IMPORT EXPORT &amp; CARIBBEAN S.A. — IMPORCARIBEAN" data-es="IMPORT EXPORT &amp; CARIBBEAN S.A. — IMPORCARIBEAN">IMPORT EXPORT &amp; CARIBBEAN S.A. — IMPORCARIBEAN</span></div>
 <div class="info-item"><strong data-en="Legal representative" data-es="Representante legal">Representante legal</strong><span data-en="Luis Felipe Rodríguez Fernández" data-es="Luis Felipe Rodríguez Fernández">Luis Felipe Rodríguez Fernández</span></div>
 <div class="info-item"><strong data-en="Registered address" data-es="Domicilio">Domicilio</strong><span data-en="Av. de los Shyris N32-218 and Av. Eloy Alfaro, Quito, Pichincha Province, Ecuador" data-es="Av. de los Shyris N32-218 y Av. Eloy Alfaro, Ciudad de Quito, Provincia de Pichincha, Ecuador">Av. de los Shyris N32-218 y Av. Eloy Alfaro, Ciudad de Quito, Provincia de Pichincha, Ecuador</span></div>
 <div class="info-item"><strong data-en="Bank account" data-es="Cuenta bancaria">Cuenta bancaria</strong><span data-en="Savings account — Banco Internacional del Ecuador: 0400607793" data-es="Cuenta de ahorros Banco Internacional del Ecuador: 0400607793">Cuenta de ahorros Banco Internacional del Ecuador: 0400607793</span></div>
